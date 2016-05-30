@@ -13,33 +13,71 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="GameComponent">
+      <UniqueIdentifier>{da691fd4-fc9c-41b9-ad71-0b65e39a9ef8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Timer.cpp">
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GameFramework.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>GameComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>GameComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>GameComponent</Filter>
     </ClCompile>
     <ClCompile Include="Object.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>GameComponent</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Timer.h">
+    <ClInclude Include="PlayState.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>GameComponent</Filter>
     </ClInclude>
     <ClInclude Include="GameFramework.h">
-      <Filter>Header Files</Filter>
+      <Filter>GameComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>GameComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>GameComponent</Filter>
     </ClInclude>
     <ClInclude Include="Object.h">
-      <Filter>Header Files</Filter>
+      <Filter>GameComponent</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Information.overlay">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Title.overlay">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="plugins.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource.zip">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
