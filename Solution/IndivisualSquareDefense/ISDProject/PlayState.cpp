@@ -44,6 +44,18 @@ void PlayState::enter(void)
 	node2->attachObject(mTempEnemyEntity);
 	node2->showBoundingBox(true);
 
+	Entity *another[5];
+	for (auto i = 0; i < 5; ++i)
+	{
+		char name[30];
+		sprintf(name, "marineAnother%d", i);
+		another[i] = mSceneMgr->createEntity(name, "marine.mesh");
+		SceneNode* tempNode = mSceneMgr->getRootSceneNode()->createChildSceneNode(name, Vector3(0.0f, 0.25f, 0.0f));
+		tempNode->setPosition(-12.0f, 0.25f, 3.0f + (2.0f * i));
+		tempNode->attachObject(another[i]);
+		tempNode->showBoundingBox(true);
+	}
+
 	mTempDieState = mRoot->getSceneManager("main")->getEntity("marineEnemy")->getAnimationState("Die");
 	mTempDieState->setLoop(false);
 	mTempDieState->setEnabled(false);
