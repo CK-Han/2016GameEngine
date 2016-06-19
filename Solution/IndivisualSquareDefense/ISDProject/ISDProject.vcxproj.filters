@@ -27,16 +27,7 @@
     <ClCompile Include="TitleState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GameFramework.cpp">
-      <Filter>GameComponent</Filter>
-    </ClCompile>
-    <ClCompile Include="Timer.cpp">
-      <Filter>GameComponent</Filter>
-    </ClCompile>
     <ClCompile Include="GameManager.cpp">
-      <Filter>GameComponent</Filter>
-    </ClCompile>
-    <ClCompile Include="Object.cpp">
       <Filter>GameComponent</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,19 +41,10 @@
     <ClInclude Include="TitleState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Timer.h">
-      <Filter>GameComponent</Filter>
-    </ClInclude>
-    <ClInclude Include="GameFramework.h">
-      <Filter>GameComponent</Filter>
-    </ClInclude>
     <ClInclude Include="GameManager.h">
       <Filter>GameComponent</Filter>
     </ClInclude>
     <ClInclude Include="GameState.h">
-      <Filter>GameComponent</Filter>
-    </ClInclude>
-    <ClInclude Include="Object.h">
       <Filter>GameComponent</Filter>
     </ClInclude>
   </ItemGroup>

@@ -21,8 +21,11 @@
 #include <OIS/OIS.h>
 
 #include <conio.h> //for debug
+#include <list>
+#include <map>
 #include "stdafx.h"
 
+using namespace std;
 using namespace Ogre;
 
 class GameState;
